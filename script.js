@@ -312,7 +312,7 @@ function createStepsChart(dailyActivity) {
         },
         {
           label: "Calories",
-          data: dailyActivity.map((d) => d.active_calories),
+          data: dailyActivity.map((d) => d.total_calories),
           backgroundColor: CHART_COLORS.orange,
           borderRadius: 4,
           yAxisID: "y1",
