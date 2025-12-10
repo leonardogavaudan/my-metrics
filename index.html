@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Metrics</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  </head>
+  <body>
+    <header>
+      <h1>My Metrics</h1>
+      <p id="last-updated"></p>
+    </header>
+
+    <main>
+      <section class="metric-section">
+        <h2>Sleep</h2>
+        <div class="chart-container">
+          <canvas id="sleep-score-chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="sleep-stages-chart"></canvas>
+        </div>
+      </section>
+
+      <section class="metric-section">
+        <h2>Readiness</h2>
+        <div class="chart-container">
+          <canvas id="readiness-chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="readiness-contributors-chart"></canvas>
+        </div>
+      </section>
+
+      <section class="metric-section">
+        <h2>Activity</h2>
+        <div class="chart-container">
+          <canvas id="activity-chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="steps-chart"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Data from Oura Ring</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
